@@ -50,3 +50,5 @@ on an element (at least click, sendKeys, clear). The solution should contain onl
  The "SeleniumWebdriverTask2" project has been created. SeleniumTests.cs file has been added for tests. Config.runsettings file has been added for website URL property.
  
  All functionality is implemented.
+
+ Note: Not all "BLOCKCHAIN" search links contain the word "BLOCKCHAIN" in the title or short description. 
