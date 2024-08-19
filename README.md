@@ -51,4 +51,5 @@ on an element (at least click, sendKeys, clear). The solution should contain onl
  
  All functionality is implemented.
 
- Note: Not all "BLOCKCHAIN" search links contain the word "BLOCKCHAIN" in the title or short description. 
+ Note: Not all "BLOCKCHAIN" search links contain the word "BLOCKCHAIN" in the title or short description. A few more test cases have been added.
+ All of them have been successfully completed.

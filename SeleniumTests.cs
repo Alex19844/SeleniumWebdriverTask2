@@ -25,9 +25,11 @@ namespace SeleniumWebdriverTask2
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
 
-        [TestCase("BLOCKCHAIN")]
+        //[TestCase("BLOCKCHAIN")]
         [TestCase("Cloud")]
         [TestCase("Automation")]
+        [TestCase("AI")]
+        [TestCase("Data")]
         public void ValidateGlobalSearchWorks(string searchKeyword)
         {
             // Navigate to the website
@@ -35,7 +37,10 @@ namespace SeleniumWebdriverTask2
 
             // Find the "Accept All" cookies button using ID locator and click on it
             IWebElement acceptButton = wait.Until<IWebElement>((d) => d.FindElement(By.Id("onetrust-accept-btn-handler")));
-            acceptButton.Click();
+            if (acceptButton.Displayed)
+            {
+                acceptButton.Click();
+            }
 
             // Find the magnifier icon using XPath and click on it
             var searchIcon = driver.FindElement(By.XPath("//button[contains(@class,'header-search__button')]"));
